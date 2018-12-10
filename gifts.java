@@ -1,5 +1,5 @@
-public class Present {
-    public static void Present {
+public class gifts {
+    public static void gifts {
 
     }
 }
