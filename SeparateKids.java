@@ -3,16 +3,16 @@ import java.io.*;
 
 public class SeparateKids
 {
-	public static void main(String[] args) throws IOException
+
+	public static ArrayList<String> kids = new ArrayList<String>();
+	public static ArrayList<String> GoodKids = new ArrayList<String>();
+	public static ArrayList<String> BadKids = new ArrayList<String>();
+	Scanner r;
+
+	public void SeparateTheKids()
 	{
-		SeparateTheKids();
-	}
-	public static void SeparateTheKids()throws IOException
-	{
-		ArrayList<String> kids = new ArrayList<String>();
-		ArrayList<String> GoodKids = new ArrayList<String>();
-		ArrayList<String> BadKids = new ArrayList<String>();
-		Scanner r = new Scanner(new File("kids.txt"));
+
+		r = new Scanner("kids.txt");
 
 		while(r.hasNext())
 		{
@@ -38,12 +38,12 @@ public class SeparateKids
 			System.out.println(GoodKids.get(y));
 		}
 
-
-
-
-
-
-
+	}
+	public ArrayList getBad() {
+		return BadKids;
+	}
+	public ArrayList getGood() {
+		return GoodKids;
 	}
 
 }
