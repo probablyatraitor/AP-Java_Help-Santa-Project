@@ -17,6 +17,7 @@ Hockey stick
 15
 55
 32.00
+4
 Book1
 12
 15
@@ -81,6 +82,7 @@ Star Wars Droid Inventor
 8
 16
 79.99
+6
 Gravity maze
 8
 14
