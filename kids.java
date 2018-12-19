@@ -5,6 +5,7 @@ public class kids {
 	public static ArrayList<String> names;
 	public static ArrayList<Boolean> nice;
 	public static ArrayList<Integer> age;
+	public static ArrayList<Integer> GoodAge = new ArrayList<Integer>();
 	public static ArrayList<String> GoodKids = new ArrayList<String>();
 	public static ArrayList<String> BadKids = new ArrayList<String>();
 
@@ -18,6 +19,8 @@ public class kids {
 		for (int x = 0; x < names.size(); x++) {
 			if (nice.get(x)) {
 				GoodKids.add(names.get(x));
+				GoodAge.add(age.get(x));
+
 			} else {
 				BadKids.add(names.get(x));
 			}
@@ -53,5 +56,14 @@ public class kids {
 	}
 	public ArrayList<String> getBad() {
 		return BadKids;
+	}
+
+
+public void sort(){
+	for (int y = 0; y < GoodKids.size(); y++) {
+		if (GoodAge.get(y)){
+			//HERE WE SORT THE KIDS USING PARALLEL ARRAYS GOODKIDS AND GOODAGE
+			}
+		}
 	}
 }
